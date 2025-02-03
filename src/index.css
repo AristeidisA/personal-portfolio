@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Source Sans 3", serif;
+}
+/* Στο αρχείο index.css ή App.css */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #570c94; /* Background της μπάρας */
+  border-radius: 9999px; /* Rounded full */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: 570c94; /* Χρώμα της μπάρας κύλισης */
+  border-radius: 9999px; /* Rounded full */
+  border: 3px solid #570c94; /* Περίγραμμα που αφήνει περιθώριο */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #030012; /* Χρώμα όταν το ποντίκι βρίσκεται επάνω */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #030012; /* Φόντο του track */
+}
